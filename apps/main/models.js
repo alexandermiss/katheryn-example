@@ -1,5 +1,5 @@
 
-var User: {
+var User =  {
   attributes: {
     username: String
   },

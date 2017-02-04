@@ -1,15 +1,13 @@
 var Katheryn = require('katheryn'),
     Settings = require('./kath/settings'),
-    Promise = require('bluebird'),
     App,
     Katheryn;
 
 // Katheryn = Promise.resolve(App);
 
-Katheryn(Settings).then(function(server){
-  server.init();
-  console.log(arguments);
+Katheryn(Settings).then(function(){
   console.log('katheryn starting...');
+  process.exit(0);
 }).catch(function (e){
   console.log('Error...');
 });

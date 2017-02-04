@@ -2,12 +2,12 @@ var path = require('path');
 
 var Settings = {
 
-  BASEDIR : __dirname,
+  BASE_DIR : path.resolve(__dirname, '../apps'),
 
-  TEMPLATE: __dirname + '/templates',
+  TEMPLATE_DIR: __dirname + '/templates',
 
   DATABASE: {
-    url : "mongodb://localhost:27017/mama"
+    URL : "mongodb://localhost:27017/mama"
   },
 
   INSTALLED_APPS: [
